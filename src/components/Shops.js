@@ -1,6 +1,6 @@
-import './css/Restaurants.css';
+import './css/Shops.css';
 
-function Restaurants() {
+function Shops() {
   return (
     <div className="grid-examples">
       <div className="container">
@@ -21,4 +21,4 @@ function Restaurants() {
   );
 }
 
-export default Restaurants;
+export default Shops;

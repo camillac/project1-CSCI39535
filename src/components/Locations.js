@@ -1,6 +1,6 @@
-import './css/Lodging.css';
-import spongehouse from './img/spongebobs-house.webp'
-import pathouse from './img/patricks-house.jpeg'
+import './css/Locations.css';
+import farm from './img/FarmHouse.webp'
+import tent from './img/Tent.webp'
 import squidhouse from './img/squidwards-house.png'
 
 import Card from './Card';
@@ -10,7 +10,7 @@ The house is three stories high and fully furnished. There is a garage in the ba
 and two windows in the front. Out back of the house, the backyard is closed in by a square of flowers.
 It also has an outdoor tap where a hose can be attached.`
 
-function Lodging() {
+function Locations() {
   return (
     <center>
     <div className='main' >
@@ -19,7 +19,7 @@ function Lodging() {
         <h3 style={{marginTop:'10px' }}>See what the best of Bikini Bottom has to offer for your stay!</h3>
       </div>
       <div className="boxes">
-        <Card img={spongehouse} description={description} />
+        <Card img={farm} description={description} />
         {/* <div className="spongebob">
           <img src={spongehouse} alt="spongebob house" />
           <p>
@@ -40,7 +40,7 @@ function Lodging() {
           </p>
         </div>
         <div className="patrick">
-          <img className="cardImg" src={pathouse} alt="patrick house" />
+          <img className="cardImg" src={tent} alt="patrick house" />
           <p>
             Located at 120 Conch Street, the house is a large brown rock with a tan arrow-shaped weather vane
             on top. Like a door, the rock has hinges to open and close. Ammenities include a gray CRT TV,
@@ -55,4 +55,4 @@ function Lodging() {
   );
 }
 
-export default Lodging;
+export default Locations;

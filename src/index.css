@@ -17,3 +17,9 @@ code {
   src: local("SpongeboyRegular"),
    url("./fonts/SpongeboyRegular.otf") format("truetype");
   }
+
+@font-face {
+  font-family: "Stardew_Valley";
+  src: local("Stardew_Valley"),
+   url("./fonts/Stardew_Valley.ttf") format("truetype");
+  }

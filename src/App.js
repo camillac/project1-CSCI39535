@@ -5,15 +5,15 @@ import Lodging from './components/Lodging';
 import Attractions from './components/Attractions';
 import Restaurants from './components/Restaurants';
 
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet, Link, useNavigate} from "react-router-dom";
 
 
 export default function App() {
   return (
     <div className="App">
       <Routes>
+        <Route index element={<Homepage />} />
         <Route path="/" element={<Layout />}>
-          <Route index element={<Homepage />} />
           <Route path="lodging" element={<Lodging />} />
           <Route path="restaurants" element={<Restaurants />} />
           <Route path="attractions" element={<Attractions />} />
@@ -29,31 +29,39 @@ export default function App() {
 }
 const navStyle = {textDecoration: "none", color: "blue"};
 function Layout() {
+
+  let navigate = useNavigate();
+  const home = () =>{
+    let path = '/';
+    navigate(path);
+  }
+
+  const lodging = () =>{
+    let path = '/lodging';
+    navigate(path);
+  }
+
+  const restaurants = () =>{
+    let path = '/restaurants';
+    navigate(path);
+  }
+
+  const attractions = () =>{
+    let path = '/attractions';
+    navigate(path);
+  }
   return (
     <div>
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
-      <nav>
-        <ul>
-          <li>
-            <Link style={navStyle} to="/">Home</Link>
-          </li>
-          <li>
-            <Link style={navStyle} to="/lodging">Lodging</Link>
-          </li>
-          <li>
-            <Link style={navStyle} to="/restaurants">Restaurants</Link>
-          </li>
-          <li>
-            <Link style={navStyle} to="/attractions">Attractions</Link>
-          </li>
-          <li>
-            <Link style={navStyle} to="/nothing-here">Nothing Here</Link>
-          </li>
-        </ul>
+      <center>
+      <nav class="nav">
+      <input type="button" name="home" value="Home" onClick={home} class="button"/>
+      <input type="button" name="lodging" value="Lodging" onClick={lodging} class="button"/>
+      <input type="button" name="restaurants" value="Restaurants" onClick={restaurants} class="button"/>
+      <input type="button" name="attractions" value="Attractions" onClick={attractions} class="button"/>
       </nav>
-
-      <hr />
+      </center>
 
       {/* An <Outlet> renders whatever child route is currently active,
           so you can think about this <Outlet> as a placeholder for
@@ -73,4 +81,3 @@ function NoMatch() {
     </div>
   );
 }
-

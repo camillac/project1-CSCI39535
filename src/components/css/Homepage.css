@@ -1,0 +1,14 @@
+.welcome {
+  font-size: 4vw;
+  color: white;
+  margin-top: 5%;
+  text-shadow: -5px 5px #10005c;
+}
+
+.logo {
+    margin-top: 1%;
+    display: block;
+    max-height: 50%;
+    max-width: 50%;
+    margin-bottom: 2%;
+}

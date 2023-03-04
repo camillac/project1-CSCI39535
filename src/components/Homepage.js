@@ -6,13 +6,18 @@ import { useNavigate } from "react-router-dom";
 function Homepage() {
 
   let navigate = useNavigate();
-  const lodging = () =>{
-    let path = '/lodging';
+  const locations = () =>{
+    let path = '/locations';
     navigate(path);
   }
 
-  const restaurants = () =>{
-    let path = '/restaurants';
+  const farm = () =>{
+    let path = '/farm';
+    navigate(path);
+  }
+
+  const shops = () =>{
+    let path = '/shops';
     navigate(path);
   }
 
@@ -26,8 +31,8 @@ function Homepage() {
       <center>
         <h1 className='welcome'>Welcome To</h1>
         <img class="logo" src={stardewvalleylogo}/>
-        <input type="button" name="lodging" value="Lodging" onClick={lodging} class="button"/>
-        <input type="button" name="restaurants" value="Restaurants" onClick={restaurants} class="button"/>
+        <input type="button" name="locations" value="Locations" onClick={locations} class="button"/>
+        <input type="button" name="shops" value="Shops" onClick={shops} class="button"/>
         <input type="button" name="attractions" value="Attractions" onClick={attractions} class="button"/>
       </center>
     </div>

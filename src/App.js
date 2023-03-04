@@ -1,9 +1,9 @@
 import './App.css';
 
 import Homepage from './components/Homepage';
-import Lodging from './components/Lodging';
+import Locations from './components/Locations';
 import Attractions from './components/Attractions';
-import Restaurants from './components/Restaurants';
+import Shops from './components/Shops';
 
 import { Routes, Route, Outlet, Link, useNavigate} from "react-router-dom";
 
@@ -14,8 +14,8 @@ export default function App() {
       <Routes>
         <Route index element={<Homepage />} />
         <Route path="/" element={<Layout />}>
-          <Route path="lodging" element={<Lodging />} />
-          <Route path="restaurants" element={<Restaurants />} />
+          <Route path="locations" element={<Locations />} />
+          <Route path="shops" element={<Shops />} />
           <Route path="attractions" element={<Attractions />} />
 
 
@@ -36,13 +36,13 @@ function Layout() {
     navigate(path);
   }
 
-  const lodging = () =>{
-    let path = '/lodging';
+  const locations = () =>{
+    let path = '/locations';
     navigate(path);
   }
 
-  const restaurants = () =>{
-    let path = '/restaurants';
+  const shops = () =>{
+    let path = '/shops';
     navigate(path);
   }
 
@@ -57,8 +57,8 @@ function Layout() {
       <center>
       <nav class="nav">
       <input type="button" name="home" value="Home" onClick={home} class="button"/>
-      <input type="button" name="lodging" value="Lodging" onClick={lodging} class="button"/>
-      <input type="button" name="restaurants" value="Restaurants" onClick={restaurants} class="button"/>
+      <input type="button" name="locations" value="Locations" onClick={locations} class="button"/>
+      <input type="button" name="shops" value="Shops" onClick={shops} class="button"/>
       <input type="button" name="attractions" value="Attractions" onClick={attractions} class="button"/>
       </nav>
       </center>
@@ -72,12 +72,19 @@ function Layout() {
 }
 
 function NoMatch() {
+
+  let navigate = useNavigate();
+  const home = () =>{
+    let path = '/';
+    navigate(path);
+  }
+
   return (
-    <div>
-      <h2>Nothing to see here!</h2>
-      <p>
-        <Link to="/">Go to the home page</Link>
-      </p>
-    </div>
+    <center>
+      <div>
+        <h2 style={{color: 'white'}}>Nothing to see here!</h2>
+        <input type="button" name="home" value="Return Home" onClick={home} class="button"/>
+      </div>
+    </center>
   );
 }

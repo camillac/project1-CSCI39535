@@ -1,6 +1,7 @@
 import './App.css';
 
 import Homepage from './components/Homepage';
+import Intro from './components/Intro';
 import Locations from './components/Locations';
 import Attractions from './components/Attractions';
 import Shops from './components/Shops';
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route index element={<Homepage />} />
         <Route path="/" element={<Layout />}>
+          <Route path="intro" element={<Intro />} />
           <Route path="locations" element={<Locations />} />
           <Route path="shops" element={<Shops />} />
           <Route path="attractions" element={<Attractions />} />
@@ -36,6 +38,11 @@ function Layout() {
     navigate(path);
   }
 
+  const intro = () =>{
+    let path = '/intro';
+    navigate(path);
+  }
+
   const locations = () =>{
     let path = '/locations';
     navigate(path);
@@ -55,12 +62,13 @@ function Layout() {
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
       <center>
-      <nav class="nav">
-      <input type="button" name="home" value="Home" onClick={home} class="button"/>
-      <input type="button" name="locations" value="Locations" onClick={locations} class="button"/>
-      <input type="button" name="shops" value="Shops" onClick={shops} class="button"/>
-      <input type="button" name="attractions" value="Attractions" onClick={attractions} class="button"/>
-      </nav>
+        <nav className="nav">
+        <input type="button" name="home" value="Home" onClick={home} class="button"/>
+        <input type="button" name="intro" value="Intro" onClick={intro} class="button"/>
+        <input type="button" name="locations" value="Locations" onClick={locations} class="button"/>
+        <input type="button" name="shops" value="Shops" onClick={shops} class="button"/>
+        <input type="button" name="attractions" value="Attractions" onClick={attractions} class="button"/>
+        </nav>
       </center>
 
       {/* An <Outlet> renders whatever child route is currently active,
@@ -80,11 +88,9 @@ function NoMatch() {
   }
 
   return (
-    <center>
-      <div>
-        <h2 style={{color: 'white'}}>Nothing to see here!</h2>
-        <input type="button" name="home" value="Return Home" onClick={home} class="button"/>
+      <div className="main">
+        <h1 style={{marginTop:'20px' }}>Uh Oh! Page Not Found!</h1>
+        <input type="button" name="home" value="Oops!" onClick={home} class="button"/>
       </div>
-    </center>
   );
 }

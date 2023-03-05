@@ -19,7 +19,7 @@ Guild to purchase equipment and souvenirs!`
 
 const spaDesc = `The spa is the perfect place to unwind when you travel to Stardew Valley. Located north of the mountains near
 the Railroad, the spa is a relaxing getaway from the rest of the town. Enjoy a steaming hot soak in the rejuvinating mountain springs!
-The baths are known to have revitalizing properties and many patrons of report feeling healthier and
+The baths are known to have revitalizing properties and many patrons report feeling healthier and
 more energized after standing still in the water for only a couple of minutes. Some of the local townsfolk visit the spa from time to
 time, so don't be afraid to say hi!`
 

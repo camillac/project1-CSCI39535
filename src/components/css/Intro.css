@@ -1,0 +1,20 @@
+.stardew {
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.about {
+    background-color: rgba(255, 225, 140);
+    color: #dd4447;
+    font-size: 2vw;
+    border-radius: 5px;
+    max-width: 80%;
+    min-width: 285px;
+    padding: 50px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 4%;
+}

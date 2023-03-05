@@ -31,10 +31,10 @@ function Homepage() {
       <center>
         <h1 className='welcome'>Your Travel Guide To</h1>
         <img className="logo" src={stardewvalleylogo} alt="logo"/>
-        <input type="button" name="intro" value="Intro" onClick={intro} class="button"/>
-        <input type="button" name="locations" value="Locations" onClick={locations} class="button"/>
-        <input type="button" name="shops" value="Shops" onClick={shops} class="button"/>
-        <input type="button" name="attractions" value="Attractions" onClick={attractions} class="button"/>
+        <input type="button" name="intro" value="Intro" onClick={intro} className="button"/>
+        <input type="button" name="locations" value="Locations" onClick={locations} className="button"/>
+        <input type="button" name="shops" value="Shops" onClick={shops} className="button"/>
+        <input type="button" name="attractions" value="Attractions" onClick={attractions} className="button"/>
       </center>
     </div>
   );

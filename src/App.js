@@ -62,12 +62,12 @@ function Layout() {
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
       <center>
-        <nav className="nav">
-        <input type="button" name="home" value="Home" onClick={home} class="button"/>
-        <input type="button" name="intro" value="Intro" onClick={intro} class="button"/>
-        <input type="button" name="locations" value="Locations" onClick={locations} class="button"/>
-        <input type="button" name="shops" value="Shops" onClick={shops} class="button"/>
-        <input type="button" name="attractions" value="Attractions" onClick={attractions} class="button"/>
+        <nav>
+        <input type="button" name="home" value="Home" onClick={home} className="button"/>
+        <input type="button" name="intro" value="Intro" onClick={intro} className="button"/>
+        <input type="button" name="locations" value="Locations" onClick={locations} className="button"/>
+        <input type="button" name="shops" value="Shops" onClick={shops} className="button"/>
+        <input type="button" name="attractions" value="Attractions" onClick={attractions} className="button"/>
         </nav>
       </center>
 
@@ -90,7 +90,7 @@ function NoMatch() {
   return (
       <div className="main">
         <h1 style={{marginTop:'20px' }}>Uh Oh! Page Not Found!</h1>
-        <input type="button" name="home" value="Oops!" onClick={home} class="button"/>
+        <input type="button" name="home" value="Oops!" onClick={home} className="button"/>
       </div>
   );
 }

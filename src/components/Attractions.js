@@ -31,10 +31,10 @@ function Attractions() {
           <h1 style={{marginTop:'20px' }}>Attractions</h1>
           <h3 style={{marginTop:'10px', fontSize: '2vw' }}>Must-See Attractions to Visit When You Book Your Ticket To Stardew Valley!</h3>
         </div>
-        <div className="boxes">
-          <Card img={beach} title={"Pelican Beach"} description={beachDesc} />
-          <Card img={mines} title={"The Mines"} description={minesDesc} />
-          <Card img={spa} title={"The Spa"} description={spaDesc} />
+        <div>
+          <Card img={beach} title={"Pelican Beach"} description={beachDesc} class="border"/>
+          <Card img={mines} title={"The Mines"} description={minesDesc} class="border"/>
+          <Card img={spa} title={"The Spa"} description={spaDesc} class="border"/>
         </div>
       </div>
   );

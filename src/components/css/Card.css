@@ -8,7 +8,7 @@
 }
 
 
-.cardImg {
+.border {
     border-width: 7px;
     border-style: ridge;
     border-color: #e87800;
@@ -16,6 +16,12 @@
     height: 35%;
     width: 40%;
     object-fit: cover;
+}
+
+.noborder {
+  height: 25%;
+  width: 30%;
+  object-fit: cover;
 }
 
 

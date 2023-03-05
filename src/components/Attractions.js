@@ -26,7 +26,6 @@ time, so don't be afraid to say hi!`
 
 function Attractions() {
   return (
-    <center>
       <div className="main">
         <div className='header' style={{marginBottom: '3%'}}>
           <h1 style={{marginTop:'20px' }}>Attractions</h1>
@@ -38,7 +37,6 @@ function Attractions() {
           <Card img={spa} title={"The Spa"} description={spaDesc} />
         </div>
       </div>
-    </center>
   );
 }
 

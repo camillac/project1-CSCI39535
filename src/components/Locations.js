@@ -24,7 +24,6 @@ cave is cleared and you'll have access to the mines, as well as the Adventure's 
 
 function Locations() {
   return (
-    <center>
     <div className='main' >
       <div className='header'>
         <h1 style={{marginTop:'20px' }}>Locations</h1>
@@ -37,7 +36,6 @@ function Locations() {
         <Card img={mountain} title={"The Mountain"} description={mountainDesc} />
       </div>
     </div>
-    </center>
   );
 }
 

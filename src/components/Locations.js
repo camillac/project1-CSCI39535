@@ -14,7 +14,7 @@ to earn money!`
 
 const townDesc = `Pelican Town is a short walk from the farmhouse and is home to many of the villagers of
 Stardew Valley! Many community events are hosted in the town center. You can enjoy a nice stroll around town,
-visit the museum, have a drink at the Stardrop Salloon, or fish in the local river. Don't forget to forage through
+visit the museum, have a drink at the Stardrop Saloon, or fish in the local river. Don't forget to forage through
 trash cans for any hidden loot! Just be sure to stay out of view of the locals in town!`
 
 const mountainDesc = `Located north of Pelican Town is a large mountainous area. Here, you'll find large mountain lakes
@@ -28,12 +28,12 @@ function Locations() {
       <div className='header'>
         <h1 style={{marginTop:'20px' }}>Locations</h1>
         <h3 style={{marginTop:'10px', fontSize: '2vw' }}>Explore the Various Locations Stardew Valley Has To Offer!</h3>
-        <img className="map" src={map} alt="map" />
+        <img className="map" src={map} alt="map"/>
       </div>
-      <div className="boxes">
-        <Card img={farm} title={"The Farmhouse"} description={farmDesc} />
-        <Card img={town} title={"Pelican Town"} description={townDesc} />
-        <Card img={mountain} title={"The Mountain"} description={mountainDesc} />
+      <div>
+        <Card img={farm} title={"The Farmhouse"} description={farmDesc} class="border"/>
+        <Card img={town} title={"Pelican Town"} description={townDesc} class="border"/>
+        <Card img={mountain} title={"The Mountain"} description={mountainDesc} class="border"/>
       </div>
     </div>
   );

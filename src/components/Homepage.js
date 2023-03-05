@@ -11,11 +11,6 @@ function Homepage() {
     navigate(path);
   }
 
-  const farm = () =>{
-    let path = '/farm';
-    navigate(path);
-  }
-
   const shops = () =>{
     let path = '/shops';
     navigate(path);
@@ -29,8 +24,8 @@ function Homepage() {
   return (
     <div className="content">
       <center>
-        <h1 className='welcome'>Welcome To</h1>
-        <img class="logo" src={stardewvalleylogo}/>
+        <h1 className='welcome'>Your Guide To</h1>
+        <img className="logo" src={stardewvalleylogo} alt="logo"/>
         <input type="button" name="locations" value="Locations" onClick={locations} class="button"/>
         <input type="button" name="shops" value="Shops" onClick={shops} class="button"/>
         <input type="button" name="attractions" value="Attractions" onClick={attractions} class="button"/>

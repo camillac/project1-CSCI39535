@@ -4,4 +4,35 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 5%
+}
+
+
+.cardImg {
+    border-width: 7px;
+    border-style: ridge;
+    border-color: #e87800;
+    border-radius: 5px;
+    height: 35%;
+    width: 40%;
+    object-fit: cover;
+}
+
+
+.desc {
+    background-color: rgba(255, 225, 140);
+    color: #dd4447;
+    font-size: 1.6vw;
+    border-radius: 5px;
+    max-width: 40%;
+    min-width: 285px;
+    padding: 14px;
+    justify-content: center;
+}
+
+.title {
+  color: #5f1001;
+  margin-bottom: 8px;
+  margin-top:8px;
+
 }

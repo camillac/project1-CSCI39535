@@ -1,54 +1,40 @@
 import './css/Locations.css';
-import farm from './img/FarmHouse.webp'
-import tent from './img/Tent.webp'
-import squidhouse from './img/squidwards-house.png'
+import map from './img/Map.webp'
+import farm from './img/StardewValleyFarm.png'
+import town from './img/PelicanTown.png'
+import mountain from './img/Mountain.png'
 
 import Card from './Card';
 
-const description = `Located at 124 Conch Street, this pineapple under the sea is an absolute gem!
-The house is three stories high and fully furnished. There is a garage in the back of the house
-and two windows in the front. Out back of the house, the backyard is closed in by a square of flowers.
-It also has an outdoor tap where a hose can be attached.`
+const farmDesc = `The Farmhouse is where you will stay during your visit to Stardew Valley!
+Here, you will be able to grow crops, raise farm animals, and decorate your new home.
+Chop trees, break rocks, and cut weeds to expand your farm area! The Farmhouse can be renovated
+to have multiple expansions, as well as a functional kitchen! Sell crops and materials at the end of the day
+to earn money!`
+
+const townDesc = `Pelican Town is a short walk from the Farmhouse and is home to many of the villagers of
+Stardew Valley! Many community events are hosted in the town center. You can enjoy a nice stroll around town,
+visit the museum, have a drink at the Stardrop Salloon, or fish in the local river. Don't forget to forage through
+trash cans for any hidden loot! Just be sure to stay out of view of the locals in town!`
+
+const mountainDesc = `Located north of Pelican Town is a large mountainous area. Here, you'll find large mountain lakes
+and some local villagers! Robin, the local woodworker, lives in the mountains with her husband, Demetrius, and their two
+kids, Sebastian and Maru. Make sure you greet Linus who lives in a tent behind Robin's house. In the spring, the debris to the
+cave is cleared and you'll have access to The Mines, as well as the Adventure's Guild.`
 
 function Locations() {
   return (
     <center>
     <div className='main' >
       <div className='header'>
-        <h1 style={{marginTop:'20px' }}>Lodging</h1>
-        <h3 style={{marginTop:'10px' }}>See what the best of Bikini Bottom has to offer for your stay!</h3>
+        <h1 style={{marginTop:'20px' }}>Locations</h1>
+        <h3 style={{marginTop:'10px', fontSize: '2vw' }}>Explore the Various Locations Stardew Valley Has To Offer!</h3>
+        <img className="map" src={map} alt="map" />
       </div>
       <div className="boxes">
-        <Card img={farm} description={description} />
-        {/* <div className="spongebob">
-          <img src={spongehouse} alt="spongebob house" />
-          <p>
-            Located at 124 Conch Street, this pineapple under the sea is an absolute gem!
-            The house is three stories high and fully furnished. There is a garage in the back of the house
-            and two windows in the front. Out back of the house, the backyard is closed in by a square of flowers.
-            It also has an outdoor tap where a hose can be attached.
-          </p>
-        </div> */}
-
-        <div className="squidward">
-          <img className="cardImg" src={squidhouse} alt="squidwards house" />
-          <p>
-            Located at 122 Conch Street, this Easter Island head is a great place to stay. The ground floor consists
-            of three adjoining rooms. the one at the front being the living room. The living room consists of a
-            bookcase with some jazz records, a couch, a coffee table, and TV. Behind the living room
-            is the kitchen with a fridge, an island counter, and four cabinets.
-          </p>
-        </div>
-        <div className="patrick">
-          <img className="cardImg" src={tent} alt="patrick house" />
-          <p>
-            Located at 120 Conch Street, the house is a large brown rock with a tan arrow-shaped weather vane
-            on top. Like a door, the rock has hinges to open and close. Ammenities include a gray CRT TV,
-            a green chair, a lamp with a yellow lampshade, a gray telephone, a brown barrel,
-            and a bed with a wooden bed frame and green blanket. You can also
-            use the sand to make furniture as needed.
-          </p>
-        </div>
+        <Card img={farm} title={"The Farmhouse"} description={farmDesc} />
+        <Card img={town} title={"Pelican Town"} description={townDesc} />
+        <Card img={mountain} title={"The Mountain"} description={mountainDesc} />
       </div>
     </div>
     </center>

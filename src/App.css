@@ -16,26 +16,6 @@ body{
   padding-bottom: 5%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: lightblue;
-
-}
-
-li {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-}
-
-li:hover {
-  background-color: green;
-}
-
 h1 {
     font-size: 4vw;
     color: #5f1001;
@@ -45,6 +25,17 @@ nav{
   overflow: hidden;
   top: 0;
   width: 100%;
+}
+
+.main {
+    border-radius: 10px;
+    border-width: 7px;
+    border-style: ridge;
+    border-color: #e87800;
+    background-color: rgba(255, 245, 200);
+    text-align: center;
+    color: #dd4447;
+    max-width: 95%;
 }
 
 .button{

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './fonts/SpongeboyRegular.otf'
 import './fonts/Stardew_Valley.ttf'
 import './index.css';
 import App from './App';

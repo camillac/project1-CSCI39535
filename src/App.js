@@ -6,7 +6,7 @@ import Locations from './components/Locations';
 import Attractions from './components/Attractions';
 import Shops from './components/Shops';
 
-import { Routes, Route, Outlet, Link, useNavigate} from "react-router-dom";
+import { Routes, Route, Outlet, useNavigate} from "react-router-dom";
 
 
 export default function App() {
@@ -29,7 +29,7 @@ export default function App() {
       </Routes>    </div>
   );
 }
-const navStyle = {textDecoration: "none", color: "blue"};
+
 function Layout() {
 
   let navigate = useNavigate();

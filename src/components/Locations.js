@@ -6,13 +6,13 @@ import mountain from './img/Mountain.png'
 
 import Card from './Card';
 
-const farmDesc = `The Farmhouse is where you will stay during your visit to Stardew Valley!
+const farmDesc = `The farmhouse is where you will stay during your visit to Stardew Valley!
 Here, you will be able to grow crops, raise farm animals, and decorate your new home.
-Chop trees, break rocks, and cut weeds to expand your farm area! The Farmhouse can be renovated
+Chop trees, break rocks, and cut weeds to expand your farm area! The farmhouse can be renovated
 to have multiple expansions, as well as a functional kitchen! Sell crops and materials at the end of the day
 to earn money!`
 
-const townDesc = `Pelican Town is a short walk from the Farmhouse and is home to many of the villagers of
+const townDesc = `Pelican Town is a short walk from the farmhouse and is home to many of the villagers of
 Stardew Valley! Many community events are hosted in the town center. You can enjoy a nice stroll around town,
 visit the museum, have a drink at the Stardrop Salloon, or fish in the local river. Don't forget to forage through
 trash cans for any hidden loot! Just be sure to stay out of view of the locals in town!`
@@ -20,7 +20,7 @@ trash cans for any hidden loot! Just be sure to stay out of view of the locals i
 const mountainDesc = `Located north of Pelican Town is a large mountainous area. Here, you'll find large mountain lakes
 and some local villagers! Robin, the local woodworker, lives in the mountains with her husband, Demetrius, and their two
 kids, Sebastian and Maru. Make sure you greet Linus who lives in a tent behind Robin's house. In the spring, the debris to the
-cave is cleared and you'll have access to The Mines, as well as the Adventure's Guild.`
+cave is cleared and you'll have access to the mines, as well as the Adventure's Guild.`
 
 function Locations() {
   return (

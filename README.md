@@ -1,5 +1,10 @@
-# Project 1 Example
+# Stardew Valley Guide
 ## UI/UX Design
+
+Group Members:
+Camilla Cheng - camillac
+
+## Build Instructions
 
 Install react-router-dom:
 
@@ -12,6 +17,3 @@ For reference:
 [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 
 [Git notes](https://docs.google.com/document/d/1IiKHX0lIk7n_AlNIttbD1d1ICukPVodbYmWj0IaCSPE/edit?usp=sharing)
-
-Hello here's a change!
-

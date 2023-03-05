@@ -37,18 +37,8 @@ li:hover {
 }
 
 h1 {
-    font-size: 4.5vw;
-}
-
-p {
-    background-color: lightyellow;
-    color: brown;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    max-width: 30%;
-    min-width: 285px;
-    margin: 20px 0px;
-    padding: 8px;
+    font-size: 4vw;
+    color: #5f1001;
 }
 
 nav{
